@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Angela Le | Somatic Healer, Intimacy Guide, Doctor of Chinese Medicine</title>
+<meta name="description" content="Dr. Angela Le is a Doctor of Chinese Medicine and somatic healer with twenty-five years of practice in New York City. She helps women reclaim their bodies, their relationships, and their lives through nervous system regulation, somatic healing, and radical presence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+        --ivory: #F3EFEC;
+    --warm-white: #FBF9F7;
+    --cream: #EEEBE7;
+    --taupe: #C0B8B2;
+    --greige: #E6E1DD;
+    --greige-light: #EBE7E4;
+    --charcoal: #563F42;
+    --soft-black: #442F34;
+    --deep-black: #3A252A;
+    --gold: #C4A882;
+    --gold-light: #D4BFA0;
+    --gold-dark: #9E8264;
+    --pewter: #846E70;
+    --silver: #B8B2AD;
+    --warm-sand: #D5CFCA;
+    
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: var(--charcoal);
+    background-color: var(--warm-white);
+    font-size: 1.05rem;
+    line-height: 1.85;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ── Typography ── */
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    line-height: 1.15;
+    color: var(--soft-black);
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+  }
+
+  h2 {
+    font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.08em;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  p {
+    margin-bottom: 1.2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--gold);
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: var(--gold-light);
+  }
+
+  /* ── Navigation ── */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 3rem;
+    background: rgba(64, 48, 53, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  nav.scrolled {
+    background: rgba(68, 47, 52, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 1.2rem 3rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.15rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--warm-white);
+    transition: color 0.3s ease;
+  }
+
+  .nav-logo:hover {
+    color: var(--gold-light);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--gold);
+  }
+
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 0.35rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .nav-toggle span {
+    width: 25px;
+    height: 2px;
+    background: var(--warm-white);
+    transition: all 0.3s ease;
+    border-radius: 1px;
+  }
+
+  .nav-toggle:hover span {
+    background: var(--gold);
+  }
+
+  /* ── Hero ── */
+  .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 8rem 2rem 5rem;
+    background: linear-gradient(135deg, #2A1A1F 0%, #442F34 35%, #5C3F45 60%, #7A5560 80%, #C4A882 100%);
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(42, 26, 31, 0.45);
+    z-index: 2;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+  }
+
+  .hero-statement {
+    color: var(--warm-white);
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    line-height: 1.15;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+  }
+
+  .hero-statement .script {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: 0.03em;
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    color: var(--gold-light);
+    line-height: 1.2;
+    margin-top: 0.3rem;
+    white-space: normal;
+  }
+
+  .hero-line {
+    width: 50px;
+    height: 1px;
+    background: var(--gold);
+    margin: 1.5rem auto;
+    opacity: 0.6;
+  }
+
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.04em;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  /* ── Section Layout ── */
+  .section {
+    padding: 10rem 2rem;
+  }
+
+  .section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-narrow {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-dark);
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── Philosophy Section ── */
+  .philosophy {
+    background: var(--soft-black);
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .philosophy h2 {
+    color: var(--warm-white);
+  }
+
+  .philosophy .section-label {
+    color: var(--gold);
+  }
+
+  .philosophy p {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .philosophy-quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--gold-light);
+    margin-top: 2rem;
+  }
+
+  .divider {
+    width: 40px;
+    height: 1px;
+    background: rgba(196, 168, 130, 0.4);
+    margin: 2rem auto;
+  }
+
+  /* ── About Section ── */
+  .about {
+    background: var(--warm-white);
+    color: var(--charcoal);
+  }
+
+  .about h2 {
+    color: var(--gold-dark);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 4rem;
+    margin-bottom: 0;
+    align-items: stretch;
+  }
+
+  .about-image-container {
+    position: relative;
+    overflow: hidden;
+    background: var(--greige-light);
+  }
+
+  .about-image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .about-text {
+    padding: 0;
+  }
+
+  .about-text p {
+    color: var(--charcoal);
+    opacity: 0.8;
+  }
+
+  /* ── Offerings Section ── */
+  .offerings {
+    background: var(--soft-black);
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .offerings h2 {
+    color: var(--warm-white);
+  }
+
+  .offerings .section-label {
+    color: var(--gold);
+  }
+
+  .offerings-header {
+    margin-bottom: 5rem;
+  }
+
+  .script-line {
+    display: block;
+  }
+
+  .offerings-grid {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .offering-card {
+    padding: 2.5rem 2rem;
+    border-top: 3px solid rgba(196, 168, 130, 0.25);
+    background: transparent;
+  }
+
+  .offering-number {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+    opacity: 0.6;
+  }
+
+  .offering-card h3 {
+    color: var(--warm-white);
+    margin-bottom: 1rem;
+  }
+
+  .offering-card p {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  /* ── Testimonials ── */
+  .testimonials {
+    background: var(--warm-white);
+    padding: 10rem 2rem;
+  }
+
+  .testimonials-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .testimonials-header h2 {
+    color: var(--soft-black);
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .testimonial {
+    background: rgba(255,255,255,0.04);
+    padding: 3rem;
+    border-left: 2px solid var(--gold);
+  }
+
+  .testimonial blockquote {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.82);
+    margin-bottom: 1.5rem;
+    line-height: 2;
+  }
+
+  .testimonial cite {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--gold);
+    font-size: 1rem;
+  }
+
+  /* ── Invitation Section ── */
+  .invitation {
+    background: var(--soft-black);
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .invitation h2 {
+    color: var(--warm-white);
+  }
+
+  .invitation .section-label {
+    color: var(--gold);
+  }
+
+  .invitation p {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  /* ── Writing Section ── */
+  .writing {
+    background: var(--warm-white);
+    color: var(--charcoal);
+  }
+
+  .writing h2 {
+    color: var(--gold-dark);
+  }
+
+  .writing .section-label {
+    color: var(--gold-dark);
+  }
+
+  .writing p {
+    color: var(--charcoal);
+    opacity: 0.75;
+  }
+
+  .writing-rule {
+    width: 40px;
+    height: 2px;
+    background: var(--gold-dark);
+    margin: 1.5rem auto 2rem;
+  }
+
+  .writing-cta {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 1rem 2rem;
+    background: var(--soft-black);
+    color: var(--warm-white);
+    border: 2px solid var(--soft-black);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+
+  .writing-cta:hover {
+    background: transparent;
+    color: var(--soft-black);
+  }
+
+  /* ── Contact Section ── */
+  .contact {
+    background: var(--soft-black);
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+  }
+
+  .contact h2 {
+    color: var(--warm-white);
+  }
+
+  .contact .section-label {
+    color: var(--gold);
+  }
+
+  .contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 2.5rem 0;
+  }
+
+  .contact-method {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-method-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .contact-method a,
+  .contact-method span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .contact-cta {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 1rem 2rem;
+    background: var(--gold);
+    color: var(--soft-black);
+    border: 2px solid var(--gold);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+
+  .contact-cta:hover {
+    background: transparent;
+    color: var(--gold);
+  }
+
+  /* ── Footer ── */
+  footer {
+    background: #5C3F45;
+    color: rgba(255,255,255,0.6);
+    padding: 2.2rem 2rem 1.5rem;
+  }
+
+  .footer-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-links a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover {
+    color: var(--gold);
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-copy,
+  .footer-bottom a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
+    color: rgba(255,255,255,0.3);
+    transition: color 0.3s ease;
+  }
+
+  .footer-bottom a:hover {
+    color: var(--gold);
+  }
+
+  /* ── Section Dividers ── */
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(196, 168, 130, 0.3), transparent);
+    margin: 0;
+  }
+
+  .section-divider.on-dark {
+    background: linear-gradient(90deg, transparent, rgba(196, 168, 130, 0.2), transparent);
+  }
+
+  /* ── Animations ── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── Responsive Design ── */
+  @media (max-width: 968px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .about-image-container {
+      height: 300px;
+    }
+
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .offerings-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .about .section-inner > div[style*="grid-template-columns: 1fr 1fr"] {
+      grid-template-columns: 1fr;
+    }
+
+    .section {
+      padding: 7rem 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-methods {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .footer-links {
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    nav {
+      padding: 1.2rem 1.5rem;
+    }
+
+    nav.scrolled {
+      padding: 1rem 1.5rem;
+    }
+
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background: rgba(68, 47, 52, 0.98);
+      backdrop-filter: blur(20px);
+      padding: 1.5rem 2rem 2rem;
+      gap: 1.2rem;
+    }
+
+    .nav-links.open {
+      display: flex;
+    }
+
+    .nav-toggle {
+      display: flex;
+    }
+
+    .section {
+      padding: 5rem 1.5rem;
+    }
+
+    .hero {
+      padding: 7rem 1.5rem 5rem;
+    }
+
+    .contact-methods {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .offering-card {
+      padding: 2rem 1.5rem;
+    }
+
+    .testimonial {
+      padding: 2rem;
+    }
+
+    .philosophy, .offerings, .domains, .testimonials, .writing, .contact, .about, .invitation {
+      padding: 6rem 1.5rem;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Dr. Angela Le</a>
+  <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#philosophy">The Work</a></li>
+    <li><a href="#offerings">Offerings</a></li>
+    <li><a href="#testimonials">Kind Words</a></li>
+    <li><a href="#writing">Writing</a></li>
+    <li><a href="#contact">Connect</a></li>
+  </ul>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero" style="position: relative; overflow: hidden;">
+  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+    <source src="hero-option5.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay" style="z-index: 2;"></div>
+  <div class="hero-content">
+    <h1 class="hero-statement">Become the Author<span class="script">of Your Own Life</span></h1>
+    <div class="hero-line"></div>
+    <p class="hero-subtitle">Begin your return to yourself.</p>
+  </div>
+</section>
+
+<!-- ── About ── -->
+<section class="section about" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-image-container fade-in">
+        <img src="angela-le-headshot.jpg..jpg" alt="Dr. Angela Le">
+      </div>
+      <div class="about-text fade-in">
+        <span class="section-label">About</span>
+        <h2 style="font-weight: 400; text-transform: uppercase; letter-spacing: 0.14em; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.2; color: var(--gold-dark);">Angela Le</h2>
+        <p>Most of us are living someone else's script. Operating from old beliefs and a nervous system still wired for survival. I know because I lived that way too.</p>
+        <p>At sixteen, a misdiagnosis sent me into years of medical interventions that left me unrecognizable to myself. That time changed everything. It sent me searching, across the world, and eventually to the study of Traditional Chinese Medicine and Taoist philosophy under Master Ni and his sons, healers whose lineage reaches back 74 generations to the Han Dynasty. I became a Doctor of Acupuncture and Chinese Medicine and have been in practice for twenty-five years.</p>
+        <p>I started in reproductive health. Over time, my patients brought me deeper questions, about their sexuality, their relationships, their sense of purpose. All of it led me to one truth: we heal when we become conscious participants in our own lives. My practice is built on that understanding and guided by genuine curiosity about who you actually want to become.</p>
+        <p style="margin-bottom: 0;">Everything I teach, I have lived first. I work with people who are ready to come home to themselves, deepen their relationships, and become the author of their own lives.</p>
+      </div>
+    </div>
+    <!-- Credentials - stacked with gold dividers -->
+    <div class="fade-in" style="margin-top: 5rem; padding-top: 3rem; border-top: 1px solid var(--gold); text-align: center;">
+      <h4 style="font-size: 0.65rem; font-family: 'Inter', sans-serif; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem;">Credentials &amp; Training</h4>
+      <p style="font-size: 0.82rem; color: var(--charcoal); line-height: 2.1; opacity: 0.7; max-width: 800px; margin: 0 auto;">Doctor of Acupuncture and Chinese Medicine, Taoist Lineage &ensp;&middot;&ensp; Somatic Experiencing Practitioner &ensp;&middot;&ensp; Somatic Sexuality Healing Practitioner &ensp;&middot;&ensp; Somatic Skills &ensp;&middot;&ensp; Safe and Sound Protocol Practitioner &ensp;&middot;&ensp; Rest and Restore Practitioner &ensp;&middot;&ensp; HeartMath Clinical Certification &ensp;&middot;&ensp; Internal Family Systems (IFS) Informed &ensp;&middot;&ensp; Thomas H&#252;bl Principles of Collective Trauma Healing &ensp;&middot;&ensp; Multidisciplinary Association for Psychedelic Studies (MAPS) Certified &ensp;&middot;&ensp; Certified Erotic Blueprint Coach &ensp;&middot;&ensp; Tantric Studies &ensp;&middot;&ensp; Taoist Sexual Arts &ensp;&middot;&ensp; Accelerated Evolution Coach &ensp;&middot;&ensp; Biohacking and Longevity Coach &ensp;&middot;&ensp; International School of Healing Arts Certified &ensp;&middot;&ensp; Yin Yoga Certified</p>
+    </div>
+    <div class="fade-in" style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--gold); text-align: center;">
+      <h4 style="font-size: 0.65rem; font-family: 'Inter', sans-serif; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem;">Leadership &amp; Facilitation</h4>
+      <p style="font-size: 0.82rem; color: var(--charcoal); line-height: 2.1; opacity: 0.7;">Mama Glow Guest Instructor &amp; Advisory Board Member &ensp;&middot;&ensp; Robyn Advisory Board Member &ensp;&middot;&ensp; David Bingham Community Leader &ensp;&middot;&ensp; Evy Poumpouras, The Extras</p>
+    </div>
+    <!-- Featured In -->
+    <div class="fade-in" style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--gold); text-align: center;">
+      <h4 style="font-size: 0.65rem; font-family: 'Inter', sans-serif; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem;">As Featured In</h4>
+      <p style="font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; color: var(--pewter); line-height: 2; max-width: 600px; margin: 0 auto; white-space: nowrap;">Huffington Post &ensp;&middot;&ensp; Motherly &ensp;&middot;&ensp; Mind Body Green &ensp;&middot;&ensp; Cup of Jo &ensp;&middot;&ensp; EmpowerHER &ensp;&middot;&ensp; Beyond Bulletproof</p>
+    </div>
+    <div class="fade-in" style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--gold); text-align: center;">
+      <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 0.95rem; color: var(--pewter); line-height: 2; max-width: 600px; margin: 0 auto;">Recipient of the Roslyn and Leslie Goldstein Unsung Hero Award, Breast Cancer Research Foundation, 2025</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── The Work ── -->
+<section class="section philosophy" id="philosophy" style="position: relative; overflow: hidden; background-color: #2A1A1F;">
+  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+    <source src="thework-video.mp4" type="video/mp4">
+  </video>
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(42, 26, 31, 0.72); z-index: 2;"></div>
+  <div class="section-narrow fade-in" style="text-align: center; position: relative; z-index: 3;">
+    <span class="section-label">The Work</span>
+    <h2 style="text-transform: uppercase; letter-spacing: 0.14em; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; line-height: 1.2; margin-bottom: 0.5rem;">Your Nervous System Is</h2>
+    <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--gold-light); display: block; margin-bottom: 3rem; letter-spacing: 0.02em;">the Foundation of Everything</span>
+    <p style="margin-bottom: 2rem;">There is a version of your life where you wake up and your body feels like yours. Where rest actually restores you. Where your relationships have depth and intimacy. Where your work feels aligned with your purpose. Where love is effortless.</p>
+    <p style="margin-bottom: 2.5rem;">This is what happens when your nervous system feels safe.</p>
+    <div class="divider"></div>
+    <p style="margin-bottom: 2rem;">Your nervous system is the foundation of everything. Your health. Your capacity for intimacy. Your purpose. Your ability to receive.</p>
+    <p style="margin-bottom: 2rem;">When your nervous system is safe, everything reorganizes. The body softens. The breath deepens. Relationships open. Energy returns. The life you have been building so carefully begins to move through you with grace.</p>
+    <p style="margin-bottom: 2rem;">This shift happens through allowing. Through presence. Through learning to trust your intuition again.</p>
+    <p style="margin-bottom: 2rem;">Dr. Le meets you exactly where you are. She listens to what your body has been trying to say. And guides you back to yourself.</p>
+    <p class="philosophy-quote">This is about coming home to who you already are.</p>
+  </div>
+</section>
+
+<!-- ── Offerings ── -->
+<section class="section offerings" id="offerings" style="background: var(--ivory); padding: 10rem 2rem;">
+  <div class="section-inner">
+    <div class="offerings-header fade-in" style="text-align: center; margin-bottom: 5rem;">
+      <span class="section-label" style="color: var(--gold-dark);">Offerings</span>
+      <h2 style="font-weight: 400; text-transform: uppercase; letter-spacing: 0.14em; font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--soft-black); line-height: 1.2; margin-bottom: 0.5rem;">Four Pathways. One Foundation.</h2>
+      <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--gold-dark); display: block; letter-spacing: 0.02em;">Each One Meets You Where You Are</span>
+    </div>
+    <div class="offerings-grid" style="grid-template-columns: repeat(2, 1fr);">
+      <div class="offering-card fade-in" style="border-top-color: var(--gold);">
+        <span class="offering-number" style="color: var(--gold-dark);">01</span>
+        <h3 style="color: var(--soft-black);">Health Optimization</h3>
+        <p style="color: var(--charcoal); opacity: 0.75;">Full ownership of your health. From sleep and hormonal balance to detoxification and longevity, this pathway gives you the tools and understanding to become the authority on your own body. This is where sovereignty begins.</p>
+      </div>
+      <div class="offering-card fade-in" style="border-top-color: var(--gold);">
+        <span class="offering-number" style="color: var(--gold-dark);">02</span>
+        <h3 style="color: var(--soft-black);">Somatic Healing</h3>
+        <p style="color: var(--charcoal); opacity: 0.75;">Your nervous system learned to perceive threat. That perception is still running long after it was needed. This work frees the energy your body has been using to survive so you can use it to create the life you actually want.</p>
+      </div>
+      <div class="offering-card fade-in" style="border-top-color: var(--gold);">
+        <span class="offering-number" style="color: var(--gold-dark);">03</span>
+        <h3 style="color: var(--soft-black);">Effortless Living</h3>
+        <p style="color: var(--charcoal); opacity: 0.75;">You have done the healing work. Now there is a deeper question: who are you without the conditioning? This pathway is for the woman ready to discover what lives beyond it. Where effort drops away and life begins to move through you.</p>
+      </div>
+      <div class="offering-card fade-in" style="border-top-color: var(--gold);">
+        <span class="offering-number" style="color: var(--gold-dark);">04</span>
+        <h3 style="color: var(--soft-black);">Private Membership</h3>
+        <p style="color: var(--charcoal); opacity: 0.75;">A private space for sovereign women to practice, connect, and grow in conscious community. For those who want to do this work alongside others who are doing it too. Intimate, intentional, and built for women who are already on the path.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Testimonials ── -->
+<section class="testimonials fade-in" id="testimonials" style="background: var(--soft-black);">
+  <div class="section-inner">
+    <div class="testimonials-header">
+      <span class="section-label" style="color: var(--gold);">Kind Words</span>
+      <h2 style="font-weight: 400; text-transform: uppercase; letter-spacing: 0.14em; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.2; margin-bottom: 0.5rem; color: var(--warm-white);">From Those Who Have</h2>
+      <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--gold-light); display: block; letter-spacing: 0.02em;">Walked This Path</span>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial fade-in">
+        <blockquote>The best way to describe the effect she's had on me is simply to say she has introduced me to my truest self. This program doesn't change you, it brings you to life and that distinction is important. I've learned to breathe, I've learned to listen, I've learned to slow down and be quiet. I've learned to live inside my body, not my mind. All that I need, I have.</blockquote>
+        <cite>Kaitlin</cite>
+      </div>
+      <div class="testimonial fade-in">
+        <blockquote>I was numb. I had spent years prioritizing performance over presence and productivity over well being. She created a space that felt safe, expansive, and deeply supportive, a space where growth felt natural rather than forced. I feel genuinely reborn. My life feels fuller, more connected, and more alive than it ever has before.</blockquote>
+        <cite>Jeff</cite>
+      </div>
+      <div class="testimonial fade-in">
+        <blockquote>Angela once told me that her goal for me was to achieve what I wanted to achieve, expending little to no effort. It is a reality I never could have imagined possible, and yet that is the reality I have been able to access and live. Angela is an alchemist. She reveals what was always there, waiting. My partnership with her is a life extension technology.</blockquote>
+        <cite>Susan</cite>
+      </div>
+      <div class="testimonial fade-in">
+        <blockquote>Over the course of nearly a year, something fundamental shifted. I became a different person, not by reinventing myself, but by coming home to who I actually am. Her presence is unmistakable. She listens with full attention, without judgment, and asks questions that are both simple and penetrating.</blockquote>
+        <cite>Laurie</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── Writing ── -->
+<section class="section writing" id="writing" style="background: var(--warm-white);">
+  <div class="section-inner">
+    <div class="section-narrow fade-in" style="text-align: center;">
+      <span class="section-label" style="color: var(--gold-dark);">Writing</span>
+      <h2 style="color: var(--soft-black); font-weight: 400; text-transform: uppercase; letter-spacing: 0.14em; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.2; margin-bottom: 0.5rem;">Where the Work Lives</h2>
+      <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--gold-dark); display: block; letter-spacing: 0.02em; margin-bottom: 2rem;">The writing is the doorway</span>
+      <p style="margin-left: auto; margin-right: auto; color: var(--charcoal); opacity: 0.75; font-size: 0.98rem; line-height: 1.95;">The writing is where this work lives in public. Clinical enough to trust. Philosophical enough to expand. Honest enough to open something you did not expect.</p>
+      <p style="margin-left: auto; margin-right: auto; color: var(--charcoal); opacity: 0.75; font-size: 0.98rem; line-height: 1.95;">Free articles feel complete on their own. Paid content goes deeper for those who are ready. And for those who want to practice alongside other women, the writing is the doorway into community.</p>
+      <p style="margin-left: auto; margin-right: auto; color: var(--pewter); font-size: 0.92rem; line-height: 1.95; font-style: italic;">Start with one piece. See if something in your body responds. That response is information.</p>
+      <a href="#" class="writing-cta" style="background: var(--soft-black); color: var(--warm-white); border-color: var(--soft-black);">Subscribe on Substack</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── Connect ── -->
+<section class="section contact" id="contact" style="background: var(--soft-black);">
+  <div class="section-narrow fade-in" style="text-align: center;">
+    <span class="section-label" style="color: var(--gold);">Connect</span>
+    <h2 style="color: var(--warm-white); font-weight: 400; text-transform: uppercase; letter-spacing: 0.14em; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.2; margin-bottom: 0.5rem;">You Already Know</h2>
+    <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--gold-light); display: block; letter-spacing: 0.02em; margin-bottom: 2rem;">Something Is Ready to Shift</span>
+    <p style="margin-left: auto; margin-right: auto; font-size: 1.08rem; color: rgba(255,255,255,0.78); line-height: 1.9;">You can feel it. That knowing is where this work begins.</p>
+    <p style="margin-left: auto; margin-right: auto; font-size: 1.08rem; color: rgba(255,255,255,0.78); line-height: 1.9; margin-bottom: 2.5rem;">Sessions are private or in small group, and available virtually or in person.</p>
+    <div style="width: 40px; height: 1px; background: var(--gold); margin: 0 auto 2.5rem;"></div>
+    <div class="contact-methods">
+      <div class="contact-method">
+        <span class="contact-method-label" style="color: var(--gold);">Email</span>
+        <a href="mailto:info@angelale.com" style="color: rgba(255,255,255,0.7);">info@angelale.com</a>
+      </div>
+      <div class="contact-method">
+        <span class="contact-method-label" style="color: var(--gold);">Location</span>
+        <span style="color: rgba(255,255,255,0.7);">New York City</span>
+      </div>
+    </div>
+    <a href="mailto:info@angelale.com" class="contact-cta">Begin a Conversation</a>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#philosophy">The Work</a>
+      <a href="#offerings">Offerings</a>
+      <a href="#testimonials">Kind Words</a>
+      <a href="#writing">Writing</a>
+      <a href="#contact">Connect</a>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 Dr. Angela Le</span>
+      <a href="#">Legals</a>
+      <a href="#">Accessibility</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── Scroll-based nav style ──
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // ── Fade-in on scroll ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // ── Smooth scroll for nav links ──
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        document.querySelector('.nav-links').classList.remove('open');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
