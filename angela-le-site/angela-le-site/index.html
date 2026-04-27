@@ -188,7 +188,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(42, 26, 31, 0.35);
+    background: rgba(42, 26, 31, 0.45);
     z-index: 2;
   }
 
@@ -228,7 +228,7 @@
     width: 50px;
     height: 1px;
     background: var(--gold);
-    margin: 2.5rem auto;
+    margin: 1.5rem auto;
     opacity: 0.6;
   }
 
@@ -760,12 +760,15 @@
 </nav>
 
 <!-- ── Hero ── -->
-<section class="hero">
-  <div class="hero-overlay"></div>
+<section class="hero" style="position: relative; overflow: hidden;">
+  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+    <source src="hero-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay" style="z-index: 2;"></div>
   <div class="hero-content">
     <h1 class="hero-statement">Become the Author<span class="script">of Your Own Life</span></h1>
     <div class="hero-line"></div>
-    <p class="hero-subtitle">Begin your return to yourself.</p>
+    <p class="hero-subtitle">Your life is your greatest creation.</p>
   </div>
 </section>
 
@@ -774,51 +777,52 @@
   <div class="section-inner">
     <div class="about-grid">
       <div class="about-image-container fade-in">
-        <img src="https://images.squarespace-cdn.com/content/v1/63d84d03fae06c760c74c1c4/225a1ac9-ac74-4c5f-8605-89a8ee080d6d/AngelaLe_5thAveFert_1205_RTF_2-2.jpg" alt="Dr. Angela Le">
+        <img src="angela.jpg" alt="Dr. Angela Le">
       </div>
       <div class="about-text fade-in">
         <span class="section-label">About</span>
         <h2 style="font-weight: 400; text-transform: uppercase; letter-spacing: 0.14em; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.2; color: var(--gold-dark);">Angela Le</h2>
-        <p>Angela Le helps women wake up to their own power. After thirty years of practice and inquiry, she has learned that most of us are living someone else's script, operating from old beliefs and a dysregulated nervous system that keeps us small. She works with women ready to rewrite theirs: to reclaim their bodies, deepen their relationships, and step into creative expression and purpose. Whether you are at a breaking point or already thriving and wanting more, Angela meets you where you are and takes you further. Her approach weaves many disciplines into one intuitive practice, guided by genuine curiosity about who you actually want to become.</p>
-        <p>She is a Doctor of Acupuncture and Chinese Medicine who has worked with women's bodies since 2001. Through thousands of sessions she arrived at a simple truth: most medicine is passive. The patient receives. The body responds. Medicine can resolve the symptom. But the woman herself does not transform until she becomes a conscious participant in her own life. That is where she stops receiving healing and starts authoring it.</p>
-        <p>Her clients stay because she sees what others miss. They stay because her questions are simple and precise and land in places that change things. They stay because she has walked every path she teaches.</p>
-        <p>Everything she offers, she has lived first. In her body. In her relationships. In the life she authored on her own terms.</p>
-        <p style="margin-bottom: 0;">She is not interested in being anyone's authority. She is interested in you becoming your own.</p>
+        <p>Dr. Angela Le has spent twenty-five years at the intersection of the body, consciousness, and the art of living fully.</p>
+        <p>Her path began in India, where an experience so profound it changed the direction of her life sent her back to California to study Traditional Chinese Medicine and Taoist philosophy under Master Ni Hua Ching and his sons, holders of a 74-generation lineage. She has been in practice since 2001.</p>
+        <p>She has worked with thousands of people across the full spectrum of human experience, from fertility and hormonal health to intimacy, purpose, and the deepest questions of what it means to be alive. Over time her patients brought her to the edges of what medicine could answer, and that is where her real work began.</p>
+        <p>She leads the global community of nonduality teacher David Bingham and is collaborating with him on Effortless Love, a book about what becomes possible when we stop living from fear and start living from our true nature.</p>
+        <p>She believes every human being has the capacity to live with far more ease, aliveness, and creative power than they have been taught to expect.</p>
+        <p style="margin-bottom: 0;">Everything she teaches, she has lived first.</p>
       </div>
     </div>
     <!-- Credentials - stacked with gold dividers -->
     <div class="fade-in" style="margin-top: 5rem; padding-top: 3rem; border-top: 1px solid var(--gold); text-align: center;">
       <h4 style="font-size: 0.65rem; font-family: 'Inter', sans-serif; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem;">Credentials &amp; Training</h4>
-      <p style="font-size: 0.82rem; color: var(--charcoal); line-height: 2.1; opacity: 0.7; max-width: 800px; margin: 0 auto;">Doctor of Acupuncture and Chinese Medicine, Taoist Lineage &ensp;&middot;&ensp; Somatic Experiencing Practitioner &ensp;&middot;&ensp; Somatic Sexuality Healing Practitioner &ensp;&middot;&ensp; Somatic Skills, Kathy Kain &ensp;&middot;&ensp; Thomas H&#252;bl Principles of Collective Trauma Healing &ensp;&middot;&ensp; Internal Family Systems (IFS) Informed &ensp;&middot;&ensp; Multidisciplinary Association for Psychedelic Studies (MAPS) Certified &ensp;&middot;&ensp; Erotic Blueprint Coach &ensp;&middot;&ensp; Tantric Studies &ensp;&middot;&ensp; Accelerated Evolution Coach &ensp;&middot;&ensp; HeartMath Clinical Certification &ensp;&middot;&ensp; Biohacking and Longevity Coach &ensp;&middot;&ensp; International School of Healing Arts Certified &ensp;&middot;&ensp; Yin Yoga Certified</p>
+      <p style="font-size: 0.82rem; color: var(--charcoal); line-height: 2.1; opacity: 0.7; max-width: 800px; margin: 0 auto;">Doctor of Acupuncture and Chinese Medicine, Taoist Lineage &ensp;&middot;&ensp; Somatic Experiencing Practitioner &ensp;&middot;&ensp; Somatic Sexuality Healing Practitioner &ensp;&middot;&ensp; Somatic Skills &ensp;&middot;&ensp; Safe and Sound Protocol Practitioner &ensp;&middot;&ensp; HeartMath Clinical Certification &ensp;&middot;&ensp; Internal Family Systems (IFS) Informed &ensp;&middot;&ensp; Thomas H&#252;bl Principles of Collective Trauma Healing &ensp;&middot;&ensp; Certified Erotic Blueprint Coach &ensp;&middot;&ensp; Tantric Studies &ensp;&middot;&ensp; Accelerated Evolution Coach &ensp;&middot;&ensp; School of Biohacking Certified &ensp;&middot;&ensp; International School of Healing Arts Certified, Detoxification Expert &ensp;&middot;&ensp; Yin Yoga Certified, Inner Dimension Yoga Academy</p>
     </div>
     <div class="fade-in" style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--gold); text-align: center;">
       <h4 style="font-size: 0.65rem; font-family: 'Inter', sans-serif; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem;">Leadership &amp; Facilitation</h4>
-      <p style="font-size: 0.82rem; color: var(--charcoal); line-height: 2.1; opacity: 0.7;">Mama Glow Guest Instructor &amp; Advisory Board Member &ensp;&middot;&ensp; Robyn Advisory Board Member &ensp;&middot;&ensp; David Bingham Community Leader &ensp;&middot;&ensp; Evy Poumpouras, The Extras</p>
+      <p style="font-size: 0.82rem; color: var(--charcoal); line-height: 2.1; opacity: 0.7;">David Bingham Community Leader &ensp;&middot;&ensp; Evy Poumpouras, The Extras &ensp;&middot;&ensp; Mama Glow Guest Instructor &amp; Advisory Board Member</p>
     </div>
     <!-- Featured In -->
     <div class="fade-in" style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--gold); text-align: center;">
       <h4 style="font-size: 0.65rem; font-family: 'Inter', sans-serif; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem;">As Featured In</h4>
       <p style="font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; color: var(--pewter); line-height: 2; max-width: 600px; margin: 0 auto; white-space: nowrap;">Huffington Post &ensp;&middot;&ensp; Motherly &ensp;&middot;&ensp; Mind Body Green &ensp;&middot;&ensp; Cup of Jo &ensp;&middot;&ensp; EmpowerHER &ensp;&middot;&ensp; Beyond Bulletproof</p>
     </div>
+    <div class="fade-in" style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--gold); text-align: center;">
+      <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 0.95rem; color: var(--pewter); line-height: 2; max-width: 600px; margin: 0 auto;">Recipient of the Roslyn and Leslie Goldstein Unsung Hero Award, Breast Cancer Research Foundation, 2026</p>
+    </div>
   </div>
 </section>
 
 
 <!-- ── The Work ── -->
-<section class="section philosophy" id="philosophy" style="position: relative; overflow: hidden; background: url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1920&q=80&auto=format&fit=crop') center/cover no-repeat; background-color: #2A1A1F;">
+<section class="section philosophy" id="philosophy" style="position: relative; overflow: hidden; background-color: #2A1A1F;">
+  <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+    <source src="thework-video.mp4" type="video/mp4">
+  </video>
   <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(42, 26, 31, 0.72); z-index: 2;"></div>
   <div class="section-narrow fade-in" style="text-align: center; position: relative; z-index: 3;">
     <span class="section-label">The Work</span>
-    <h2 style="text-transform: uppercase; letter-spacing: 0.14em; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; line-height: 1.2; margin-bottom: 0.5rem;">Your Nervous System Is</h2>
-    <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--gold-light); display: block; margin-bottom: 3rem; letter-spacing: 0.02em;">the Foundation of Everything</span>
-    <p style="margin-bottom: 2rem;">There is a version of your life where you wake up and your body feels like yours. Where rest actually restores you. Where your relationships have depth and intimacy. Where your work feels aligned with your purpose. Where love is effortless.</p>
-    <p style="margin-bottom: 2.5rem;">This is what happens when your nervous system feels safe.</p>
-    <div class="divider"></div>
-    <p style="margin-bottom: 2rem;">Your nervous system is the foundation of everything. Your health. Your capacity for intimacy. Your purpose. Your ability to receive.</p>
-    <p style="margin-bottom: 2rem;">When your nervous system is safe, everything reorganizes. The body softens. The breath deepens. Relationships open. Energy returns. The life you have been building so carefully begins to move through you with grace.</p>
-    <p style="margin-bottom: 2rem;">This shift happens through allowing. Through presence. Through learning to trust your intuition again.</p>
-    <p style="margin-bottom: 2rem;">Dr. Le meets you exactly where you are. She listens to what your body has been trying to say. And guides you back to yourself.</p>
-    <p class="philosophy-quote">This is about coming home to who you already are.</p>
+    <h2 style="text-transform: uppercase; letter-spacing: 0.12em; font-size: clamp(1.4rem, 2.8vw, 2rem); font-weight: 400; line-height: 1.3; margin-bottom: 3rem;">You Are More Powerful Than You Have Been Taught to Believe</h2>
+    <p style="margin-bottom: 2rem;">There is more available to you than you have yet created. More aliveness. More ease. More vitality in every area of your life.</p>
+    <p style="margin-bottom: 2rem; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.2rem; color: var(--gold-light);">You already know this.</p>
+    <p style="margin-bottom: 0;">This work goes there. Into the depth of what you are capable of. Into the life that is still yours to create.</p>
   </div>
 </section>
 
@@ -830,26 +834,26 @@
       <h2 style="font-weight: 400; text-transform: uppercase; letter-spacing: 0.14em; font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--soft-black); line-height: 1.2; margin-bottom: 0.5rem;">Four Pathways. One Foundation.</h2>
       <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--gold-dark); display: block; letter-spacing: 0.02em;">Each One Meets You Where You Are</span>
     </div>
-    <div class="offerings-grid" style="grid-template-columns: repeat(2, 1fr);">
+    <div class="offerings-grid" style="grid-template-columns: repeat(2, 1fr); align-items: start;">
       <div class="offering-card fade-in" style="border-top-color: var(--gold);">
         <span class="offering-number" style="color: var(--gold-dark);">01</span>
         <h3 style="color: var(--soft-black);">Health Optimization</h3>
-        <p style="color: var(--charcoal); opacity: 0.75;">Full ownership of your health. From sleep and hormonal balance to detoxification and longevity, this pathway gives you the tools and understanding to become the authority on your own body. This is where sovereignty begins.</p>
+        <p style="color: var(--charcoal); opacity: 0.75;">Full ownership of your health. From sleep and hormonal balance to detoxification and longevity, this pathway gives you the tools and understanding to become the authority on what your body is asking for. This is where sovereignty begins.</p>
       </div>
       <div class="offering-card fade-in" style="border-top-color: var(--gold);">
         <span class="offering-number" style="color: var(--gold-dark);">02</span>
         <h3 style="color: var(--soft-black);">Somatic Healing</h3>
-        <p style="color: var(--charcoal); opacity: 0.75;">Your nervous system learned to perceive threat. That perception is still running long after it was needed. This work frees the energy your body has been using to survive so you can use it to create the life you actually want.</p>
+        <p style="color: var(--charcoal); opacity: 0.75;">Your nervous system holds everything you have experienced. This work goes there directly, releasing what has accumulated and restoring what was always yours. What opens on the other side is more aliveness, more ease, more capacity to receive.</p>
       </div>
       <div class="offering-card fade-in" style="border-top-color: var(--gold);">
         <span class="offering-number" style="color: var(--gold-dark);">03</span>
         <h3 style="color: var(--soft-black);">Effortless Living</h3>
-        <p style="color: var(--charcoal); opacity: 0.75;">You have done the healing work. Now there is a deeper question: who are you without the conditioning? This pathway is for the woman ready to discover what lives beyond it. Where effort drops away and life begins to move through you.</p>
+        <p style="color: var(--charcoal); opacity: 0.75;">You have done the healing work. The deeper question now is who you are without the conditioning, what becomes available when you stop carrying what was never yours. This is where effort drops away and life begins to move through you.</p>
       </div>
       <div class="offering-card fade-in" style="border-top-color: var(--gold);">
         <span class="offering-number" style="color: var(--gold-dark);">04</span>
-        <h3 style="color: var(--soft-black);">Private Membership</h3>
-        <p style="color: var(--charcoal); opacity: 0.75;">A private space for sovereign women to practice, connect, and grow in conscious community. For those who want to do this work alongside others who are doing it too. Intimate, intentional, and built for women who are already on the path.</p>
+        <h3 style="color: var(--soft-black);">Community</h3>
+        <p style="color: var(--charcoal); opacity: 0.75;">You were not meant to do this work alone. This is a private space for aligned women to practice, connect, and grow together. The quality of who surrounds you shapes everything you create. This space holds that possibility.</p>
       </div>
     </div>
   </div>
@@ -885,6 +889,16 @@
 </section>
 
 
+<!-- ── Dark CTA ── -->
+<section class="section" id="session" style="background: var(--deep-black); color: rgba(255,255,255,0.8); text-align: center;">
+  <div class="section-narrow fade-in" style="text-align: center;">
+    <p style="font-size: 1.1rem; color: rgba(255,255,255,0.82); line-height: 2; margin-bottom: 1.2rem;">You have been the one everyone counts on. The one who reads the room, who makes it all work, who holds it all together.</p>
+    <p style="font-size: 1.1rem; color: rgba(255,255,255,0.82); line-height: 2; margin-bottom: 2rem;">There is another way to live. One where you are held as much as you hold.</p>
+    <p style="font-size: 0.92rem; color: rgba(255,255,255,0.5); line-height: 1.9; margin-bottom: 3rem;">Sessions are private, one-on-one, and available virtually or in person in New York City.</p>
+    <a href="mailto:info@angelale.com" class="contact-cta">Schedule a Consultation</a>
+  </div>
+</section>
+
 <!-- ── Writing ── -->
 <section class="section writing" id="writing" style="background: var(--warm-white);">
   <div class="section-inner">
@@ -892,9 +906,9 @@
       <span class="section-label" style="color: var(--gold-dark);">Writing</span>
       <h2 style="color: var(--soft-black); font-weight: 400; text-transform: uppercase; letter-spacing: 0.14em; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.2; margin-bottom: 0.5rem;">Where the Work Lives</h2>
       <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--gold-dark); display: block; letter-spacing: 0.02em; margin-bottom: 2rem;">The writing is the doorway</span>
-      <p style="margin-left: auto; margin-right: auto; color: var(--charcoal); opacity: 0.75; font-size: 0.98rem; line-height: 1.95;">The writing is where this work lives in public. Clinical enough to trust. Philosophical enough to expand. Honest enough to open something you did not expect.</p>
-      <p style="margin-left: auto; margin-right: auto; color: var(--charcoal); opacity: 0.75; font-size: 0.98rem; line-height: 1.95;">Free articles feel complete on their own. Paid content goes deeper for those who are ready. And for those who want to practice alongside other women, the writing is the doorway into community.</p>
-      <p style="margin-left: auto; margin-right: auto; color: var(--pewter); font-size: 0.92rem; line-height: 1.95; font-style: italic;">Start with one piece. See if something in your body responds. That response is information.</p>
+      <p style="margin-left: auto; margin-right: auto; color: var(--charcoal); opacity: 0.75; font-size: 0.98rem; line-height: 1.95;">This is where the philosophy becomes visible. Clinical enough to trust. Philosophical enough to expand. Honest enough to open something you did not expect.</p>
+      <p style="margin-left: auto; margin-right: auto; color: var(--charcoal); opacity: 0.75; font-size: 0.98rem; line-height: 1.95;">Free essays are complete on their own. Paid content goes deeper for those who are ready. The writing is also the entrance to community, for those who want to practice alongside others on the path.</p>
+      <p style="margin-left: auto; margin-right: auto; color: var(--pewter); font-size: 0.92rem; line-height: 1.95; font-style: italic;">Start with one piece. Notice what it opens in you.</p>
       <a href="#" class="writing-cta" style="background: var(--soft-black); color: var(--warm-white); border-color: var(--soft-black);">Subscribe on Substack</a>
     </div>
   </div>
@@ -908,7 +922,8 @@
     <h2 style="color: var(--warm-white); font-weight: 400; text-transform: uppercase; letter-spacing: 0.14em; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.2; margin-bottom: 0.5rem;">You Already Know</h2>
     <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--gold-light); display: block; letter-spacing: 0.02em; margin-bottom: 2rem;">Something Is Ready to Shift</span>
     <p style="margin-left: auto; margin-right: auto; font-size: 1.08rem; color: rgba(255,255,255,0.78); line-height: 1.9;">You can feel it. That knowing is where this work begins.</p>
-    <p style="margin-left: auto; margin-right: auto; font-size: 1.08rem; color: rgba(255,255,255,0.78); line-height: 1.9; margin-bottom: 2.5rem;">Sessions are private or in small group, and available virtually or in person.</p>
+    <p style="margin-left: auto; margin-right: auto; font-size: 1.08rem; color: rgba(255,255,255,0.78); line-height: 1.9;">Most people sense that more is available and continue moving past it. This work is for those who are ready.</p>
+    <p style="margin-left: auto; margin-right: auto; font-size: 1.08rem; color: rgba(255,255,255,0.78); line-height: 1.9; margin-bottom: 2.5rem;">Sessions are private or in small group, available virtually or in person.</p>
     <div style="width: 40px; height: 1px; background: var(--gold); margin: 0 auto 2.5rem;"></div>
     <div class="contact-methods">
       <div class="contact-method">
