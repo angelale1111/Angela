@@ -101,7 +101,7 @@ def build():
     <div class="connect-block">
       <p class="label gold-dark">Consultation</p>
       <p class="body">Reproductive health consultations happen through my clinical practice in New York City.</p>
-      <a href="https://fafwellness.com" target="_blank" class="btn btn-secondary">Visit Fifth Avenue Fertility Wellness</a>
+      <a href="mailto:info@fafwellness.com?subject=Consultation%20Inquiry" class="btn btn-secondary">Email Fifth Avenue Fertility Wellness &rarr;</a>
     </div>
 
     <div class="connect-block">

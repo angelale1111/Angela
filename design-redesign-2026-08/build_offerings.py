@@ -179,7 +179,7 @@ def build():
 </head>
 <body>
 
-<div class="annot"><b>DRAFT — local preview only, nothing built into Lovable yet.</b>Two flags to confirm before this goes live: (1) nav label "Work With Me" renamed to "Offerings" everywhere, and (2) the Fifth Avenue Fertility Wellness link uses a placeholder URL (fafwellness.com, guessed from your email domain) — send the real link.</div>
+<div class="annot"><b>DRAFT — local preview only, nothing built into Lovable yet.</b>Nav label "Work With Me" renamed to "Offerings" everywhere. Consultation routes to info@fafwellness.com, mentorship routes to info@angelale.com.</div>
 
 <header class="site-header">
   <div class="site-header-inner">
@@ -198,7 +198,7 @@ def build():
   <div class="consultation-inner">
     <p class="label gold-dark">Consultation</p>
     <p class="body">Reproductive health consultations happen through my clinical practice in New York City.</p>
-    <a href="https://fafwellness.com" target="_blank" class="btn btn-secondary">Visit Fifth Avenue Fertility Wellness</a>
+    <a href="mailto:info@fafwellness.com?subject=Consultation%20Inquiry" class="btn btn-secondary">Email Fifth Avenue Fertility Wellness</a>
   </div>
 </section>
 
