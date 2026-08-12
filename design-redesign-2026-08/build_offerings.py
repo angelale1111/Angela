@@ -160,21 +160,12 @@ def build():
   .faq-icon::before {{ content: ""; position: absolute; left: 0; top: 50%; width: 12px; height: 1px; background: currentColor; }}
   .faq-a p {{ padding: 0 2rem 1.5rem 0; font-size: 0.95rem; color: var(--ink); margin: 0; }}
 
-  /* WRITING CTA */
-  .writing-cta {{ background: var(--dark); padding: 4.5rem 1.5rem; text-align: center; }}
-  .writing-cta-inner {{ max-width: 560px; margin: 0 auto; }}
-  .writing-cta .label {{ color: rgba(255,255,255,0.35); margin-bottom: 1rem; }}
-  .writing-cta h2 {{ font-family: 'Playfair Display', serif; font-weight: 400; font-size: 1.1rem; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(255,255,255,0.9); margin: 0 0 1.2rem; }}
-  .writing-cta .sub {{ font-style: italic; color: rgba(255,255,255,0.55); margin: 0 0 1.5rem; }}
-  .writing-cta .banner-photo {{ display: block; margin: 0 auto 1.5rem; width: 220px; height: 110px; object-fit: cover; object-position: 50% 25%; }}
-  .btn-ghost {{ border-color: rgba(255,255,255,0.35); background: transparent; color: rgba(255,255,255,0.6); }}
-
-  /* FOOTER */
-  .site-footer {{ background: var(--light); border-top: 1px solid rgba(75,75,82,0.12); padding: 2.5rem 1.5rem; text-align: center; }}
+  /* FOOTER — dark, since the FAQ section right above it is light */
+  .site-footer {{ background: var(--dark); border-top: 1px solid rgba(255,255,255,0.08); padding: 2.5rem 1.5rem; text-align: center; }}
   .site-footer .footer-nav {{ display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem 1.5rem; }}
-  .site-footer .footer-nav a {{ font-family: 'Inter', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.688rem; color: var(--ink); }}
-  .site-footer .copyright {{ margin-top: 2rem; font-size: 0.75rem; color: var(--ink); }}
-  .site-footer .legal-row {{ margin-top: 0.75rem; display: flex; justify-content: center; gap: 0.5rem; font-size: 0.75rem; color: var(--ink); }}
+  .site-footer .footer-nav a {{ font-family: 'Inter', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.688rem; color: rgba(255,255,255,0.68); }}
+  .site-footer .copyright {{ margin-top: 2rem; font-size: 0.75rem; color: rgba(255,255,255,0.55); }}
+  .site-footer .legal-row {{ margin-top: 0.75rem; display: flex; justify-content: center; gap: 0.5rem; font-size: 0.75rem; color: rgba(255,255,255,0.55); }}
 </style>
 </head>
 <body>
@@ -233,13 +224,6 @@ def build():
   <div class="faq-inner">
     <span class="label gold-dark">Q &amp; A</span>
     {faq_html}
-  </div>
-</section>
-
-<section class="writing-cta">
-  <div class="writing-cta-inner">
-    <h2>Begin With the Writing</h2>
-    <a href="#" class="btn btn-ghost">Subscribe on Substack &rarr;</a>
   </div>
 </section>
 
