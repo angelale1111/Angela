@@ -160,7 +160,7 @@ def _template(bio_block, wrap_class="bio-wrap"):
      with empty space beneath it. Sits on .page-container, so the photo's
      left edge and the text's right edge match the header exactly. */
   .bio-columns {{ display: flex; gap: 3.5rem; align-items: stretch; margin-bottom: 1rem; }}
-  .bio-photo-col {{ position: relative; width: 300px; overflow: hidden; flex-shrink: 0; }}
+  .bio-photo-col {{ position: relative; width: 340px; overflow: hidden; flex-shrink: 0; }}
   .bio-photo-col img {{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 8%; display: block; }}
   .bio-text-col {{ flex: 1; }}
   .bio-text-col p.bio-p {{ font-size: 1rem; line-height: 1.85; margin-bottom: 1.6rem; }}
