@@ -146,7 +146,7 @@ def _template(bio_block, wrap_class="bio-wrap"):
   .about-hero .credentials li {{ font-family: 'Inter', sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.68); margin-bottom: 0.4rem; }}
 
   /* BIO — photo now lives here */
-  .bio-section {{ background: var(--light); padding: 0 0 3.5rem; }}
+  .bio-section {{ background: var(--light); padding: 4.5rem 0 3.5rem; }}
   .bio-wrap {{ max-width: 620px; margin: 0 auto; padding: 0 1.5rem; }}
   .bio-photo {{ width: 240px; height: 320px; overflow: hidden; margin: 0 auto 2.5rem; }}
   .bio-photo img {{ width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; display: block; }}
