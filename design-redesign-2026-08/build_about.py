@@ -28,7 +28,7 @@ FONT_FACES = f"""
 # Bio photo — recommended candidate (soft, contained expression, sleeveless v-neck).
 # The other candidate (about-candidate-smile, big open smile, zip-front top) is also
 # available below for comparison but is not the recommended default.
-bio_photo = b64("about-candidate-soft")
+bio_photo = b64("about-candidate-original")
 bio_photo_alt = b64("about-candidate-smile")
 story_photo = b64("two-ways-in")
 
