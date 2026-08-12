@@ -189,7 +189,7 @@ def build():
       <a href="offerings.html" class="active">Offerings</a>
       <a href="#">Kind Words</a>
       <a href="writing.html">Writing</a>
-      <a href="#">Connect</a>
+      <a href="connect.html">Connect</a>
     </nav>
   </div>
 </header>
@@ -249,7 +249,7 @@ def build():
     <a href="offerings.html">Offerings</a>
     <a href="#">Kind Words</a>
     <a href="writing.html">Writing</a>
-    <a href="#">Connect</a>
+    <a href="connect.html">Connect</a>
   </nav>
   <p class="copyright">&copy; 2026 Dr. Angela Le</p>
   <div class="legal-row">

@@ -157,7 +157,7 @@ html = f"""<!DOCTYPE html>
     <a href="offerings.html">Offerings</a>
     <a href="#">Kind Words</a>
     <a href="writing.html">Writing</a>
-    <a href="#">Connect</a>
+    <a href="connect.html">Connect</a>
   </nav>
 </header>
 
@@ -281,7 +281,7 @@ html = f"""<!DOCTYPE html>
 
 <footer>
   <div class="flinks">
-    <a href="about.html">About</a><a href="offerings.html">Offerings</a><a href="#">Kind Words</a><a href="writing.html">Writing</a><a href="#">Connect</a>
+    <a href="about.html">About</a><a href="offerings.html">Offerings</a><a href="#">Kind Words</a><a href="writing.html">Writing</a><a href="connect.html">Connect</a>
   </div>
   <p class="fine">© 2026 Dr. Angela Le</p>
   <p class="fine" style="margin-top:0.75rem;">Privacy Policy &nbsp;·&nbsp; Terms &amp; Conditions &nbsp;·&nbsp; Accessibility</p>
