@@ -39,13 +39,12 @@
   .site-header nav a { font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.688rem; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(255,255,255,0.6); }
   .site-header nav a.active { color: var(--gold); }
 
-  /* MAIN — light. Heading lives here directly (no separate dark hero band),
-     the same simplification already used on the About page. */
-  .connect-main { background: var(--light); padding: 4.5rem 1.5rem 4rem; text-align: center; }
+  /* MAIN — light. Starts directly on Consultation, no page heading above it. */
+  .connect-main { background: var(--light); padding: 5rem 1.5rem 4rem; text-align: center; }
   .connect-main-wrap { max-width: 480px; margin: 0 auto; }
-  .connect-main-wrap h1 { font-family: 'Playfair Display', serif; font-weight: 400; font-size: 2rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--dark); margin: 1rem 0 1.4rem; }
 
   .connect-block { margin-top: 3rem; }
+  .connect-block:first-child { margin-top: 0; }
   .connect-block p.body { font-size: 1.0625rem; margin: 1rem 0 1.6rem; }
 
   .btn { display: inline-flex; align-items: center; justify-content: center; border: 1px solid; padding: 1rem 2rem; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.688rem; text-transform: uppercase; letter-spacing: 0.12em; transition: background 0.2s, color 0.2s; }
@@ -85,10 +84,6 @@
 
 <section class="connect-main">
   <div class="connect-main-wrap">
-    <p class="label gold-dark">Connect</p>
-    <h1>Contact</h1>
-    <div class="hairline"></div>
-
     <div class="connect-block">
       <p class="label gold-dark">Consultation</p>
       <p class="body">Reproductive health consultations happen through my clinical practice in New York City.</p>
