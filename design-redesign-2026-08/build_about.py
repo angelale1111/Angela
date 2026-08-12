@@ -127,9 +127,11 @@ def _template(bio_block, wrap_class="bio-wrap"):
      bio, story, closing and footer all share the exact same left/right edge. */
   .page-container {{ max-width: 940px; margin: 0 auto; padding: 0 1.5rem; }}
 
-  /* SITE HEADER — logo + nav, sits at the top of the banner */
+  /* SITE HEADER — logo + nav, sits at the top of the banner. Full-width with
+     its own edge padding, matching the header on the Offerings/Writing/Home
+     pages, instead of being boxed into the narrower page-container. */
   .site-header {{ background: var(--dark); padding: 1.4rem 0; }}
-  .site-header-inner {{ display: flex; align-items: center; justify-content: space-between; }}
+  .site-header-inner {{ display: flex; align-items: center; justify-content: space-between; padding: 0 2.5rem; }}
   .site-header .logo {{ font-family: 'Playfair Display', serif; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.18em; color: rgba(255,255,255,0.9); }}
   .site-header nav {{ display: flex; gap: 1.75rem; }}
   .site-header nav a {{ font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.688rem; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(255,255,255,0.6); }}
@@ -200,11 +202,11 @@ def _template(bio_block, wrap_class="bio-wrap"):
 
 <!-- SITE HEADER -->
 <header class="site-header">
-  <div class="site-header-inner page-container">
+  <div class="site-header-inner">
     <a href="index.html" class="logo" style="text-decoration:none;">Dr. Angela Le</a>
     <nav>
       <a href="about.html" class="active">About</a>
-      <a href="offerings.html">Work With Me</a>
+      <a href="offerings.html">Offerings</a>
       <a href="#">Kind Words</a>
       <a href="writing.html">Writing</a>
       <a href="#">Connect</a>
@@ -251,7 +253,7 @@ def _template(bio_block, wrap_class="bio-wrap"):
 <footer class="site-footer">
   <nav class="footer-nav">
     <a href="about.html">About</a>
-    <a href="offerings.html">Work With Me</a>
+    <a href="offerings.html">Offerings</a>
     <a href="#">Kind Words</a>
     <a href="writing.html">Writing</a>
     <a href="#">Connect</a>
