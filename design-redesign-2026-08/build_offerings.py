@@ -183,12 +183,12 @@ def build():
 
 <header class="site-header">
   <div class="site-header-inner">
-    <span class="logo">Dr. Angela Le</span>
+    <a href="index.html" class="logo" style="text-decoration:none;">Dr. Angela Le</a>
     <nav>
-      <a href="#">About</a>
-      <a href="#" class="active">Offerings</a>
+      <a href="about.html">About</a>
+      <a href="offerings.html" class="active">Offerings</a>
       <a href="#">Kind Words</a>
-      <a href="#">Writing</a>
+      <a href="writing.html">Writing</a>
       <a href="#">Connect</a>
     </nav>
   </div>
@@ -245,10 +245,10 @@ def build():
 
 <footer class="site-footer">
   <nav class="footer-nav">
-    <a href="#">About</a>
-    <a href="#">Offerings</a>
+    <a href="about.html">About</a>
+    <a href="offerings.html">Offerings</a>
     <a href="#">Kind Words</a>
-    <a href="#">Writing</a>
+    <a href="writing.html">Writing</a>
     <a href="#">Connect</a>
   </nav>
   <p class="copyright">&copy; 2026 Dr. Angela Le</p>

@@ -38,6 +38,7 @@
   .site-header .logo { font-family: 'Playfair Display', serif; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.18em; color: rgba(255,255,255,0.9); }
   .site-header nav { display: flex; gap: 1.75rem; }
   .site-header nav a { font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.688rem; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(255,255,255,0.6); }
+  .site-header nav a.active { color: var(--gold); }
 
   /* HERO — text only, no photo. Thin banner beneath the header. */
   .about-hero { background: var(--dark); padding: 2.75rem 1.5rem 3rem; text-align: center; }
@@ -105,12 +106,12 @@
 <!-- SITE HEADER -->
 <header class="site-header">
   <div class="site-header-inner page-container">
-    <span class="logo">Dr. Angela Le</span>
+    <a href="index.html" class="logo" style="text-decoration:none;">Dr. Angela Le</a>
     <nav>
-      <a href="#">About</a>
-      <a href="#">Work With Me</a>
+      <a href="about.html" class="active">About</a>
+      <a href="offerings.html">Work With Me</a>
       <a href="#">Kind Words</a>
-      <a href="#">Writing</a>
+      <a href="writing.html">Writing</a>
       <a href="#">Connect</a>
     </nav>
   </div>
@@ -176,10 +177,10 @@
 <!-- FOOTER -->
 <footer class="site-footer">
   <nav class="footer-nav">
-    <a href="#">About</a>
-    <a href="#">Work With Me</a>
+    <a href="about.html">About</a>
+    <a href="offerings.html">Work With Me</a>
     <a href="#">Kind Words</a>
-    <a href="#">Writing</a>
+    <a href="writing.html">Writing</a>
     <a href="#">Connect</a>
   </nav>
   <p class="copyright">&copy; 2026 Dr. Angela Le</p>

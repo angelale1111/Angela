@@ -151,12 +151,12 @@ html = f"""<!DOCTYPE html>
 <div class="annot">DRAFT 1 — local preview only, nothing built into Lovable. Copy is unchanged and verbatim from the live site.</div>
 
 <header class="nav">
-  <div class="logo">Dr. Angela Le</div>
+  <a href="index.html" class="logo" style="text-decoration:none;">Dr. Angela Le</a>
   <nav class="links">
-    <a href="#">About</a>
-    <a href="#">Work With Me</a>
+    <a href="about.html">About</a>
+    <a href="offerings.html">Work With Me</a>
     <a href="#">Kind Words</a>
-    <a href="#">Writing</a>
+    <a href="writing.html">Writing</a>
     <a href="#">Connect</a>
   </nav>
 </header>
@@ -281,7 +281,7 @@ html = f"""<!DOCTYPE html>
 
 <footer>
   <div class="flinks">
-    <a href="#">About</a><a href="#">Work With Me</a><a href="#">Kind Words</a><a href="#">Writing</a><a href="#">Connect</a>
+    <a href="about.html">About</a><a href="offerings.html">Work With Me</a><a href="#">Kind Words</a><a href="writing.html">Writing</a><a href="#">Connect</a>
   </div>
   <p class="fine">© 2026 Dr. Angela Le</p>
   <p class="fine" style="margin-top:0.75rem;">Privacy Policy &nbsp;·&nbsp; Terms &amp; Conditions &nbsp;·&nbsp; Accessibility</p>
