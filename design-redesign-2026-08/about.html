@@ -50,8 +50,10 @@
   .about-hero .credentials { list-style: none; padding: 0; margin: 0; }
   .about-hero .credentials li { font-family: 'Inter', sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.68); margin-bottom: 0.4rem; }
 
-  /* BIO — photo now lives here */
-  .bio-section { background: var(--light); padding: 4.5rem 0 3.5rem; }
+  /* BIO — photo now lives here. min-height + centering keeps this section
+     filling the full first screen on load, so the dark My Story section
+     below it doesn't peek into view until the person actually scrolls. */
+  .bio-section { background: var(--light); padding: 4.5rem 0 3.5rem; min-height: calc(100vh - 74px); display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; }
   .bio-wrap { max-width: 620px; margin: 0 auto; padding: 0 1.5rem; }
   .bio-photo { width: 240px; height: 320px; overflow: hidden; margin: 0 auto 2.5rem; }
   .bio-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; display: block; }
