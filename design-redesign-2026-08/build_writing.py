@@ -26,7 +26,7 @@ def build():
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Writing — Redesign Preview</title>
+<title>Writing — Dr. Angela Le</title>
 <style>
 {FONT_FACES}
   :root {{

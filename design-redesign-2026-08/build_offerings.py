@@ -80,7 +80,7 @@ def build():
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Offerings — Redesign Preview</title>
+<title>Offerings — Dr. Angela Le</title>
 <style>
 {FONT_FACES}
   :root {{

@@ -104,7 +104,7 @@ def _template(bio_block, wrap_class="bio-wrap"):
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>About — Redesign Preview</title>
+<title>About — Dr. Angela Le</title>
 <style>
 {FONT_FACES}
   :root {{
