@@ -77,7 +77,7 @@ TESTIMONIALS = [
     ]),
 ]
 
-kind_words_img = b64("kind-words-photo")
+kind_words_img = b64("kind-words-thankyou")
 
 def build():
     testimonial_sections = ""
@@ -124,7 +124,7 @@ def build():
 
   /* INTRO — light, matches the homepage carousel's visual language */
   .kw-intro {{ background: var(--light); padding: 5rem 1.5rem 4rem; text-align: center; }}
-  .kw-intro-photo {{ display: block; width: 300px; height: 200px; margin: 0 auto 2.5rem; object-fit: cover; object-position: 50% 35%; }}
+  .kw-intro-photo {{ display: block; width: 260px; height: 325px; margin: 0 auto 2.5rem; object-fit: cover; object-position: 50% 22%; }}
   .kw-intro .label {{ color: var(--gold-dark); margin-bottom: 1.2rem; }}
   .kw-intro p.sub {{ font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 1.5rem; color: var(--ink); max-width: 480px; margin: 0 auto; line-height: 1.5; }}
 
