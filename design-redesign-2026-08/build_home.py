@@ -54,11 +54,6 @@ html = f"""<!DOCTYPE html>
   nav.links a {{ font-family: 'Inter', sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.688rem; color: rgba(255,255,255,0.6); }}
   nav.links a:hover {{ color: var(--gold); }}
 
-  .annot {{
-    text-align: center; padding: 0.55rem; font-family: 'Inter', sans-serif;
-    font-size: 0.7rem; letter-spacing: 0.05em; background: #1c1b1f; color: var(--gold-light);
-  }}
-
   /* HERO */
   .hero {{ display: flex; min-height: 92vh; background: var(--dark); }}
   .hero-photo {{ width: 40%; position: relative; overflow: hidden; }}
@@ -147,8 +142,6 @@ html = f"""<!DOCTYPE html>
 </style>
 </head>
 <body>
-
-<div class="annot">DRAFT 1 — local preview only, nothing built into Lovable. Copy is unchanged and verbatim from the live site.</div>
 
 <header class="nav">
   <a href="index.html" class="logo" style="text-decoration:none;">Dr. Angela Le</a>

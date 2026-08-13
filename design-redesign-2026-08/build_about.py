@@ -46,7 +46,6 @@ bio_paragraphs = [
 
 credential_rows = [
     ("As Featured In", "Huffington Post &middot; Motherly &middot; Mind Body Green &middot; Cup of Jo &middot; EmpowerHER &middot; Beyond Bulletproof"),
-    ("Training &amp; Certifications", "Somatic Experiencing Practitioner &middot; Somatic Sexuality Healing Practitioner &middot; Erotic Blueprint Coach &middot; IFS-Informed &middot; Collective Trauma Training with Thomas H&uuml;bl &middot; MAPS Certified"),
 ]
 
 story_part_one = [
