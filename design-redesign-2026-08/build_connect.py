@@ -63,17 +63,12 @@ def build():
 
   .connect-location {{ margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(173,167,156,0.3); font-family: 'Inter', sans-serif; font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold-dark); opacity: 0.85; }}
 
-  /* BEGIN WITH THE WRITING — dark, matches the Offerings page's closing CTA */
-  .writing-cta {{ background: var(--dark); padding: 4.5rem 1.5rem; text-align: center; }}
-  .writing-cta-inner {{ max-width: 560px; margin: 0 auto; }}
-  .writing-cta h2 {{ font-family: 'Playfair Display', serif; font-weight: 400; font-size: 1.1rem; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(255,255,255,0.9); margin: 0 0 1.6rem; }}
-
-  /* FOOTER — light, since the section above it here is dark (matches Offerings) */
-  .site-footer {{ background: var(--light); border-top: 1px solid rgba(75,75,82,0.12); padding: 2.5rem 1.5rem; text-align: center; }}
+  /* FOOTER — dark, since the section above it here (connect-main) is light */
+  .site-footer {{ background: var(--dark); border-top: 1px solid rgba(255,255,255,0.08); padding: 2.5rem 1.5rem; text-align: center; }}
   .site-footer .footer-nav {{ display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem 1.5rem; }}
-  .site-footer .footer-nav a {{ font-family: 'Inter', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.688rem; color: var(--ink); }}
-  .site-footer .copyright {{ margin-top: 2rem; font-size: 0.75rem; color: var(--ink); }}
-  .site-footer .legal-row {{ margin-top: 0.75rem; display: flex; justify-content: center; gap: 0.5rem; font-size: 0.75rem; color: var(--ink); }}
+  .site-footer .footer-nav a {{ font-family: 'Inter', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.688rem; color: #ffffff; }}
+  .site-footer .copyright {{ margin-top: 2rem; font-size: 0.75rem; color: #ffffff; }}
+  .site-footer .legal-row {{ margin-top: 0.75rem; display: flex; justify-content: center; gap: 0.5rem; font-size: 0.75rem; color: #ffffff; }}
 </style>
 </head>
 <body>
@@ -106,13 +101,6 @@ def build():
     </div>
 
     <p class="connect-location">In Person in New York City &middot; Virtual Everywhere</p>
-  </div>
-</section>
-
-<section class="writing-cta">
-  <div class="writing-cta-inner">
-    <h2>Begin With the Writing</h2>
-    <a href="https://substack.com/@drangelale" class="btn btn-ghost">Subscribe on Substack &rarr;</a>
   </div>
 </section>
 
