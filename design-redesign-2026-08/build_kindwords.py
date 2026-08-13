@@ -77,7 +77,7 @@ TESTIMONIALS = [
     ]),
 ]
 
-kind_words_img = b64("kind-words-thankyou")
+kind_words_img = b64("kind-words-thankyou2")
 
 def build():
     testimonial_sections = ""
@@ -168,7 +168,7 @@ def build():
 <section class="kw-intro">
   <img class="kw-intro-photo" src="data:image/jpeg;base64,{kind_words_img}" alt="">
   <p class="label">Kind Words</p>
-  <p class="sub">Five stories from women who have walked this path.</p>
+  <p class="sub">Stories from women who have walked this path.</p>
 </section>
 {testimonial_sections}
 <footer class="site-footer">
