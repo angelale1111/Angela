@@ -1,5 +1,9 @@
 import base64
 
+def b64(name):
+    with open(f"/home/claude/photos/{name}.jpg.b64") as f:
+        return f.read()
+
 def font_b64(name):
     with open(f"/home/claude/fonts_b64/{name}.b64") as f:
         return f.read()
@@ -14,12 +18,36 @@ FONT_FACES = f"""
 @font-face {{ font-family: 'Inter'; font-style: normal; font-weight: 500; src: url(data:font/woff2;base64,{font_b64('inter-500')}) format('woff2'); font-display: swap; }}
 """
 
+# Verbatim, from the live Lovable homepage quote carousel (src/components/site/HomeSections.tsx).
+# Do not substitute other names or invent additional quotes.
+TESTIMONIALS = [
+    ("Susan", "My business went from pre-revenue and fledgling to self-sustaining and thriving, not because I worked harder, but because I worked differently. Angela is an alchemist. She doesn’t fix you; she reveals what was always there, waiting."),
+    ("Darcy", "With Angela’s guidance I started to view life’s challenges differently, realizing my capacity for happiness and peace, which continues to grow daily. I am not the same person I was a year ago and that is largely due to my work with Angela."),
+    ("Sally", "Working with Angela has been a transformative experience that has profoundly impacted my life. What I treasure most is the personal transformation she has facilitated — a journey towards becoming a more present, compassionate, and calmer individual."),
+    ("Amy", "For years, sex felt routine and like just another task on our to-do list. Angela’s insight, particularly her powerful invitation for us to take full responsibility for our pleasure, struck a chord with my partner and I."),
+    ("Laurie", "While working with Angela, I felt I was her only client. She is so much more than an acupuncturist. To me, she is a physical healer, spiritual teacher, and coach. Honestly, if I had one wish for the world, it would be that everyone finds their own Angela."),
+]
+
+kind_words_img = b64("kind-words-photo")
+
 def build():
+    testimonial_sections = ""
+    for i, (name, quote) in enumerate(TESTIMONIALS):
+        bg = "dark" if i % 2 == 0 else "light"
+        testimonial_sections += f"""
+<section class="kw-block {bg}">
+  <div class="kw-block-inner">
+    <p class="kw-quote">{quote}</p>
+    <p class="kw-name">{name}</p>
+  </div>
+</section>
+"""
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Connect — Dr. Angela Le</title>
+<title>Kind Words — Dr. Angela Le</title>
 <style>
 {FONT_FACES}
   :root {{
@@ -35,10 +63,6 @@ def build():
   body {{ margin: 0; font-family: 'Lora', serif; color: var(--ink); background: var(--light); line-height: 1.9; }}
 
   .label {{ font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.688rem; text-transform: uppercase; letter-spacing: 0.2em; }}
-  .label.gold-dark {{ color: var(--gold-dark); }}
-
-  .gold-rule {{ width: 40px; height: 1px; background: var(--gold); opacity: 0.6; margin: 0 auto; }}
-  .hairline {{ width: 40px; height: 1px; background: var(--gold); opacity: 0.6; margin: 0 auto; }}
 
   /* SITE HEADER */
   .site-header {{ background: var(--dark); padding: 1.4rem 0; }}
@@ -48,27 +72,25 @@ def build():
   .site-header nav a {{ font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.688rem; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(255,255,255,0.6); }}
   .site-header nav a.active {{ color: var(--gold); }}
 
-  /* MAIN — light. Starts directly on Consultation, no page heading above it. */
-  .connect-main {{ background: var(--light); padding: 5rem 1.5rem 4rem; text-align: center; }}
-  .connect-main-wrap {{ max-width: 480px; margin: 0 auto; }}
+  /* INTRO — light, matches the homepage carousel's visual language */
+  .kw-intro {{ background: var(--light); padding: 5rem 1.5rem 4rem; text-align: center; }}
+  .kw-intro-photo {{ display: block; width: 300px; height: 200px; margin: 0 auto 2.5rem; object-fit: cover; object-position: 50% 35%; }}
+  .kw-intro .label {{ color: var(--gold-dark); margin-bottom: 1.2rem; }}
+  .kw-intro p.sub {{ font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 1.5rem; color: var(--ink); max-width: 480px; margin: 0 auto; line-height: 1.5; }}
 
-  .connect-block {{ margin-top: 3rem; }}
-  .connect-block:first-child {{ margin-top: 0; }}
-  .connect-block p.body {{ font-size: 1.0625rem; margin: 1rem 0 1.6rem; }}
+  /* TESTIMONIAL BLOCKS — alternating dark/light, matching site rhythm */
+  .kw-block {{ padding: 4.5rem 1.5rem; text-align: center; }}
+  .kw-block.dark {{ background: var(--dark); }}
+  .kw-block.light {{ background: var(--light); }}
+  .kw-block-inner {{ max-width: 560px; margin: 0 auto; }}
+  .kw-quote {{ font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 1.4rem; line-height: 1.6; }}
+  .kw-block.dark .kw-quote {{ color: rgba(255,255,255,0.85); }}
+  .kw-block.light .kw-quote {{ color: var(--ink); }}
+  .kw-name {{ margin-top: 1.2rem; font-family: 'Inter', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.6rem; }}
+  .kw-block.dark .kw-name {{ color: var(--gold); }}
+  .kw-block.light .kw-name {{ color: var(--gold-dark); }}
 
-  .btn {{ display: inline-flex; align-items: center; justify-content: center; border: 1px solid; padding: 1rem 2rem; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.688rem; text-transform: uppercase; letter-spacing: 0.12em; transition: background 0.2s, color 0.2s; }}
-  .btn-secondary {{ border-color: var(--dark); background: var(--dark); color: var(--light); }}
-  .btn-primary {{ border-color: var(--gold-light); background: var(--gold-light); color: var(--dark); }}
-  .btn-ghost {{ border-color: rgba(255,255,255,0.35); background: transparent; color: rgba(255,255,255,0.6); }}
-
-  .connect-location {{ margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(173,167,156,0.3); font-family: 'Inter', sans-serif; font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold-dark); opacity: 0.85; }}
-
-  /* BEGIN WITH THE WRITING — dark, matches the Offerings page's closing CTA */
-  .writing-cta {{ background: var(--dark); padding: 4.5rem 1.5rem; text-align: center; }}
-  .writing-cta-inner {{ max-width: 560px; margin: 0 auto; }}
-  .writing-cta h2 {{ font-family: 'Playfair Display', serif; font-weight: 400; font-size: 1.1rem; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(255,255,255,0.9); margin: 0 0 1.6rem; }}
-
-  /* FOOTER — light, since the section above it here is dark (matches Offerings) */
+  /* FOOTER — light, since the last testimonial block above it is dark (Laurie) */
   .site-footer {{ background: var(--light); border-top: 1px solid rgba(75,75,82,0.12); padding: 2.5rem 1.5rem; text-align: center; }}
   .site-footer .footer-nav {{ display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem 1.5rem; }}
   .site-footer .footer-nav a {{ font-family: 'Inter', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.688rem; color: var(--ink); }}
@@ -84,38 +106,19 @@ def build():
     <nav>
       <a href="about.html">About</a>
       <a href="offerings.html">Offerings</a>
-      <a href="kind-words.html">Kind Words</a>
+      <a href="kind-words.html" class="active">Kind Words</a>
       <a href="writing.html">Writing</a>
-      <a href="connect.html" class="active">Connect</a>
+      <a href="connect.html">Connect</a>
     </nav>
   </div>
 </header>
 
-<section class="connect-main">
-  <div class="connect-main-wrap">
-    <div class="connect-block">
-      <p class="label gold-dark">Consultation</p>
-      <p class="body">Reproductive health consultations happen through my clinical practice in New York City.</p>
-      <a href="mailto:info@fafwellness.com?subject=Consultation%20Inquiry" class="btn btn-secondary">Email Fifth Avenue Fertility Wellness &rarr;</a>
-    </div>
-
-    <div class="connect-block">
-      <p class="label gold-dark">Mentorship</p>
-      <p class="body">Mentorship is a private relationship over six to nine months, with support between sessions and priority scheduling. It begins with an application.</p>
-      <a href="mailto:info@angelale.com?subject=Mentorship%20Application" class="btn btn-primary">Submit a Mentorship Application &rarr;</a>
-    </div>
-
-    <p class="connect-location">In Person in New York City &middot; Virtual Everywhere</p>
-  </div>
+<section class="kw-intro">
+  <img class="kw-intro-photo" src="data:image/jpeg;base64,{kind_words_img}" alt="">
+  <p class="label">Kind Words</p>
+  <p class="sub">Five stories from women who have walked this path.</p>
 </section>
-
-<section class="writing-cta">
-  <div class="writing-cta-inner">
-    <h2>Begin With the Writing</h2>
-    <a href="https://substack.com/@drangelale" class="btn btn-ghost">Subscribe on Substack &rarr;</a>
-  </div>
-</section>
-
+{testimonial_sections}
 <footer class="site-footer">
   <nav class="footer-nav">
     <a href="about.html">About</a>
@@ -138,7 +141,7 @@ def build():
 </html>
 """
 
-with open("/home/claude/connect-redesign.html", "w") as f:
+with open("/home/claude/kindwords-redesign.html", "w") as f:
     f.write(build())
 
 print("done")

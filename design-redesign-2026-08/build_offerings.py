@@ -170,15 +170,13 @@ def build():
 </head>
 <body>
 
-<div class="annot"><b>DRAFT — local preview only, nothing built into Lovable yet.</b>Nav label "Work With Me" renamed to "Offerings" everywhere. Consultation routes to info@fafwellness.com, mentorship routes to info@angelale.com.</div>
-
 <header class="site-header">
   <div class="site-header-inner">
     <a href="index.html" class="logo" style="text-decoration:none;">Dr. Angela Le</a>
     <nav>
       <a href="about.html">About</a>
       <a href="offerings.html" class="active">Offerings</a>
-      <a href="#">Kind Words</a>
+      <a href="kind-words.html">Kind Words</a>
       <a href="writing.html">Writing</a>
       <a href="connect.html">Connect</a>
     </nav>
@@ -231,7 +229,7 @@ def build():
   <nav class="footer-nav">
     <a href="about.html">About</a>
     <a href="offerings.html">Offerings</a>
-    <a href="#">Kind Words</a>
+    <a href="kind-words.html">Kind Words</a>
     <a href="writing.html">Writing</a>
     <a href="connect.html">Connect</a>
   </nav>

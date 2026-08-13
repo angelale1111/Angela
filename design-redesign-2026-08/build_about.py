@@ -208,7 +208,7 @@ def _template(bio_block, wrap_class="bio-wrap"):
     <nav>
       <a href="about.html" class="active">About</a>
       <a href="offerings.html">Offerings</a>
-      <a href="#">Kind Words</a>
+      <a href="kind-words.html">Kind Words</a>
       <a href="writing.html">Writing</a>
       <a href="connect.html">Connect</a>
     </nav>
@@ -255,7 +255,7 @@ def _template(bio_block, wrap_class="bio-wrap"):
   <nav class="footer-nav">
     <a href="about.html">About</a>
     <a href="offerings.html">Offerings</a>
-    <a href="#">Kind Words</a>
+    <a href="kind-words.html">Kind Words</a>
     <a href="writing.html">Writing</a>
     <a href="connect.html">Connect</a>
   </nav>

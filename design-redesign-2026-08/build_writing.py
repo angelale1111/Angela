@@ -88,7 +88,7 @@ def build():
     <nav>
       <a href="about.html">About</a>
       <a href="offerings.html">Offerings</a>
-      <a href="#">Kind Words</a>
+      <a href="kind-words.html">Kind Words</a>
       <a href="writing.html" class="active">Writing</a>
       <a href="connect.html">Connect</a>
     </nav>
@@ -110,7 +110,7 @@ def build():
   <nav class="footer-nav">
     <a href="about.html">About</a>
     <a href="offerings.html">Offerings</a>
-    <a href="#">Kind Words</a>
+    <a href="kind-words.html">Kind Words</a>
     <a href="writing.html">Writing</a>
     <a href="connect.html">Connect</a>
   </nav>
