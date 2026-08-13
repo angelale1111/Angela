@@ -46,10 +46,7 @@ bio_paragraphs = [
 
 credential_rows = [
     ("As Featured In", "Huffington Post &middot; Motherly &middot; Mind Body Green &middot; Cup of Jo &middot; EmpowerHER &middot; Beyond Bulletproof"),
-    ("Training &amp; Certifications", "Somatic Experiencing Practitioner, and assisting faculty in training students &middot; Somatic Sexuality Healing Practitioner (SSHP) &middot; IFS-Informed"),
-    ("Sex &amp; Intimacy Coaching", "Guiding individuals in deepening relationships, healing sexual trauma, and enhancing pleasure. Erotic Blueprint Coach &middot; Tantra studies"),
-    ("Performance Coaching", "Helping high-achieving individuals optimize their nervous systems for peak performance. Accelerated Evolution Coach"),
-    ("Biohacking &amp; Bioharmonizing", "Integrating cutting-edge wellness techniques into reproductive and hormonal health. Longevity coaching &middot; Yin yoga teacher &middot; Detoxification expert"),
+    ("Training &amp; Certifications", "Somatic Experiencing Practitioner &middot; Somatic Sexuality Healing Practitioner &middot; Erotic Blueprint Coach &middot; IFS-Informed &middot; Collective Trauma Training with Thomas H&uuml;bl &middot; MAPS Certified"),
 ]
 
 story_part_one = [
