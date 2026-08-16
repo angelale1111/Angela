@@ -11,7 +11,7 @@
 :root{--stone:#FBF9F7;--stone-deep:#F3EFEC;--dark:#3C3236;--ink:#4A4347;--ink-soft:#8F8481;--accent:#C4A882;--line:#E6E1DD}
 *{box-sizing:border-box}a{text-decoration:none;color:inherit}
 body{margin:0;font-family:'Lora',serif;color:var(--ink);background:var(--stone);line-height:1.8}
-.spine{max-width:1500px;margin:0 auto}
+.spine{max-width:1560px;margin:0 auto}
 
 .nav{display:flex;align-items:center;justify-content:space-between;padding:2rem 4rem;border-bottom:1px solid var(--line)}
 .nav .logo{font-family:'Playfair Display',serif;font-size:1.15rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dark)}
@@ -27,28 +27,29 @@ body{margin:0;font-family:'Lora',serif;color:var(--ink);background:var(--stone);
 
 /* HERO */
 .hero-wrap{padding:0 4rem}
-.hero{display:grid;grid-template-columns:1fr .55fr;gap:5rem;padding:6.5rem 0 7rem;align-items:center;max-width:1500px;margin:0 auto}
-.hero h1{font-family:'Playfair Display',serif;font-weight:400;font-size:3.2rem;line-height:1.15;margin:0 0 1.4rem;color:var(--dark);max-width:18ch}
-.hero .sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:1.45rem;color:var(--ink-soft);margin:0 0 2.2rem;max-width:46ch}
-.hero p{font-size:1.02rem;line-height:1.95;margin:0 0 1.1rem;max-width:52ch}
-.hero .rule{margin:2.2rem 0}
+.hero{display:grid;grid-template-columns:1fr .6fr;gap:5.5rem;padding:7rem 0 7.5rem;align-items:center;max-width:1560px;margin:0 auto}
+.hero-copy{max-width:46rem}
+.hero h1{font-family:'Playfair Display',serif;font-weight:400;font-size:3.7rem;line-height:1.14;margin:0 0 1.8rem;color:var(--dark);max-width:20ch}
+.hero .sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:1.7rem;line-height:1.55;color:var(--ink-soft);margin:0 0 2.8rem;max-width:none}
+.hero p{font-size:1.1rem;line-height:2.05;margin:0 0 1.5rem;max-width:none}
+.hero .rule{margin:2.8rem 0}
 .frame{position:relative;padding:1rem}
 .frame:before{content:"";position:absolute;inset:0;border:1px solid var(--accent);opacity:.45}
 .frame img{width:100%;height:58vh;min-height:440px;object-fit:cover;object-position:50% 18%;display:block;position:relative}
 
 /* SECTIONS */
-.sec{padding:8rem 4rem}
+.sec{padding:8.5rem 4rem}
 .light{background:var(--stone)}.deep{background:var(--stone-deep)}
 .dark{background:var(--dark);color:rgba(255,255,255,.72)}
 
 /* photo + copy band */
-.band{display:grid;grid-template-columns:.8fr 1fr;gap:5rem;align-items:center;max-width:1500px;margin:0 auto}
-.band.rev{grid-template-columns:1fr .8fr}
+.band{display:grid;grid-template-columns:.72fr 1fr;gap:5.5rem;align-items:center;max-width:1560px;margin:0 auto}
+.band.rev{grid-template-columns:1fr .72fr}
 .bphoto{position:relative;padding:1rem}
 .bphoto:before{content:"";position:absolute;inset:0;border:1px solid var(--accent);opacity:.4}
 .bphoto img{width:100%;height:560px;object-fit:cover;display:block;position:relative}
-.band h2{font-family:'Playfair Display',serif;font-weight:400;font-size:2.2rem;line-height:1.25;margin:1.2rem 0 1.6rem;color:var(--dark);max-width:20ch}
-.band p{font-size:1.03rem;line-height:1.98;color:var(--ink);max-width:56ch;margin:0 0 1.3rem}
+.band h2{font-family:'Playfair Display',serif;font-weight:400;font-size:2.45rem;line-height:1.22;margin:1.3rem 0 1.9rem;color:var(--dark);max-width:22ch}
+.band p{font-size:1.08rem;line-height:2.05;color:var(--ink);max-width:44rem;margin:0 0 1.45rem}
 .band .soft{color:var(--ink-soft)}
 .band .btn{margin-top:1rem}
 
@@ -56,17 +57,17 @@ body{margin:0;font-family:'Lora',serif;color:var(--ink);background:var(--stone);
 .dark h2{font-family:'Playfair Display',serif;font-weight:400;font-size:2.1rem;line-height:1.3;color:#fff;margin:1.2rem 0 0;max-width:18ch}
 .dark p{font-size:1.03rem;line-height:1.98;color:rgba(255,255,255,.7);margin:0 0 1.2rem;max-width:52ch}
 .dark .accentline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.4rem;color:var(--accent);margin:1.8rem 0 0}
-.grid2{display:grid;grid-template-columns:.9fr 1fr;gap:5rem;align-items:start;max-width:1500px;margin:0 auto}
-.lh{font-family:'Playfair Display',serif;font-weight:400;font-size:2.2rem;line-height:1.25;color:var(--dark);margin:1.2rem 0 0;max-width:18ch}
-.lb p{font-size:1.03rem;line-height:1.98;color:var(--ink);margin:0 0 1.2rem;max-width:52ch}
+.grid2{display:grid;grid-template-columns:.85fr 1fr;gap:5.5rem;align-items:start;max-width:1560px;margin:0 auto}
+.lh{font-family:'Playfair Display',serif;font-weight:400;font-size:2.45rem;line-height:1.22;color:var(--dark);margin:1.3rem 0 0;max-width:20ch}
+.lb p{font-size:1.08rem;line-height:2.05;color:var(--ink);margin:0 0 1.4rem;max-width:44rem}
 .lb .accentline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;color:var(--dark);margin:1.8rem 0 0;border-left:1px solid var(--accent);padding-left:1.6rem}
 
 /* carousel */
-.car{max-width:1500px;margin:0 auto}
+.car{max-width:1560px;margin:0 auto}
 .car-track{position:relative;min-height:230px}
 .slide{display:none}
 .slide.on{display:block}
-.slide .q{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.9rem;line-height:1.55;color:var(--dark);margin:0 0 1.6rem;max-width:30ch}
+.slide .q{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:2.15rem;line-height:1.5;color:var(--dark);margin:0 0 1.8rem;max-width:40ch}
 .slide .n{font-family:'Inter',sans-serif;font-weight:500;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
 .car-ctl{display:flex;align-items:center;gap:1.6rem;margin-top:2.5rem}
 .car-btn{width:38px;height:38px;border:1px solid var(--line);background:none;cursor:pointer;color:var(--ink-soft);font-size:1rem;line-height:1;display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif}
@@ -95,7 +96,7 @@ body{margin:0;font-family:'Lora',serif;color:var(--ink);background:var(--stone);
 
 <!-- 1 HERO -->
 <div class="hero-wrap"><section class="hero">
-  <div>
+  <div class="hero-copy">
     <h1>When Effort Has Taken You as Far as It Can</h1>
     <p class="sub">Private mentorship for women who have reached the limits of effort, control, and self-reliance.</p>
     <p>You may have spent years doing what you know how to do well. Thinking ahead. Taking care of what needs to be handled. Holding everything together.</p>
@@ -182,12 +183,12 @@ body{margin:0;font-family:'Lora',serif;color:var(--ink);background:var(--stone);
 <section class="sec light"><div class="grid2">
   <div>
     <span class="eyebrow">Begin</span>
-    <h2 style="font-family:'Playfair Display',serif;font-weight:400;font-size:2.2rem;line-height:1.25;color:var(--dark);margin:1.2rem 0 0;max-width:18ch">When You Listen to What Is Alive in You</h2>
+    <h2 style="font-family:'Playfair Display',serif;font-weight:400;font-size:2.45rem;line-height:1.22;color:var(--dark);margin:1.3rem 0 0;max-width:20ch">When You Listen to What Is Alive in You</h2>
   </div>
   <div>
-    <p style="font-size:1.03rem;line-height:1.98;margin:0 0 1.2rem;max-width:52ch">There is often a moment before change when nothing on the outside has happened yet. You simply know.</p>
-    <p style="font-size:1.03rem;line-height:1.98;margin:0 0 1.2rem;max-width:52ch">Something you have been tolerating becomes harder to ignore. A question becomes more honest. You begin to see what you have been managing, and what you actually want.</p>
-    <p style="font-size:1.03rem;line-height:1.98;margin:0 0 2rem;max-width:52ch;color:var(--ink-soft)">You do not need to know where that recognition will lead. You can begin there.</p>
+    <p style="font-size:1.08rem;line-height:2.05;margin:0 0 1.4rem;max-width:44rem">There is often a moment before change when nothing on the outside has happened yet. You simply know.</p>
+    <p style="font-size:1.08rem;line-height:2.05;margin:0 0 1.4rem;max-width:44rem">Something you have been tolerating becomes harder to ignore. A question becomes more honest. You begin to see what you have been managing, and what you actually want.</p>
+    <p style="font-size:1.08rem;line-height:2.05;margin:0 0 2.2rem;max-width:44rem;color:var(--ink-soft)">You do not need to know where that recognition will lead. You can begin there.</p>
     <a href="connect.html" class="btn btn-primary">Submit a Private Mentorship Application</a>
     <p class="note">Not ready for private mentorship? <a href="writing.html">Start with the writing.</a></p>
   </div>
