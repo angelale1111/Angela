@@ -30,6 +30,7 @@ body{margin:0;font-family:'Lora',serif;color:var(--ink);background:var(--stone);
 
 /* PAGE HEAD */
 .head{padding:5.5rem 3rem 0}
+.head.pad-btm{padding-bottom:5rem}
 .head .col{max-width:38rem;margin:0 auto}
 h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;
  font-size:clamp(2.4rem,3.4vw,3.3rem);line-height:1.15;color:var(--dark);margin:0 0 1.6rem}
@@ -54,6 +55,15 @@ h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;
 .story p{font-size:1.12rem;line-height:1.9;margin:0 0 1.35rem}
 .story p.mark{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.5rem,2vw,1.85rem);
  line-height:1.3;color:var(--golddark);margin:2rem 0}
+.story p.lead-q{margin:0 0 2rem}
+.story details{border:0}
+.story summary{list-style:none;cursor:pointer;display:inline-block;
+ font-family:'Inter',sans-serif;font-weight:400;font-size:.72rem;letter-spacing:.16em;
+ text-transform:uppercase;color:var(--ink);border-bottom:1px solid var(--gold);padding-bottom:4px;transition:color .2s}
+.story summary::-webkit-details-marker{display:none}
+.story summary:hover{color:var(--golddark)}
+.story details[open] summary{margin-bottom:2.4rem}
+.story .full p:last-child{margin-bottom:0}
 
 /* WRITING LIST */
 .essay{border-top:1px solid var(--line);padding:1.7rem 0}
@@ -83,8 +93,8 @@ h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;
 .long p.fine a{color:var(--golddark);border-bottom:1px solid var(--gold);padding-bottom:2px}
 .head p.contact-sub{font-size:1.06rem;color:var(--soft);margin:0}
 
-.close{background:var(--ivory);padding:1.26rem 3rem 3.18rem;text-align:center}
-.close .fine{font-size:.98rem;line-height:1.9;color:var(--soft);margin:.93rem 0 0}
+.close{background:var(--ivory);padding:0 3rem 5rem;text-align:center}
+.close .fine{font-size:.98rem;line-height:1.9;color:var(--soft);margin:2rem 0 0}
 .close .fine a{color:var(--golddark);border-bottom:1px solid var(--gold);padding-bottom:2px;white-space:nowrap}
 .close .btnrow{display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap}
 
@@ -96,9 +106,11 @@ h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;
 
 
 @media(max-width:1000px){
- .head{padding:3.5rem 1.5rem 0}.long{padding:3.5rem 1.5rem}.close{padding:2rem 1.5rem 3rem}
+ .head{padding:3.5rem 1.5rem 0}.head.pad-btm{padding-bottom:5rem}.long{padding:3.5rem 1.5rem}.close{padding:2rem 1.5rem 3rem}
  .story{padding:3rem 0}
- .nav{flex-wrap:wrap;gap:1rem;padding:1.1rem 1.5rem;height:auto}
+ .nav{flex-wrap:wrap;gap:1rem;padding:1.1rem 1.5rem;height:auto;justify-content:center}
+ .nav .links{flex-wrap:wrap;justify-content:center;gap:1.1rem 1.4rem;width:100%}
+ .nav .logo{width:100%;text-align:center}
 }
 </style></head><body>
 <header class="nav">
@@ -111,7 +123,7 @@ h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;
 </div></section>
 
 <section class="long" style="padding-top:1rem">
-<div class="story"><span class="who">Susan</span><h2>Founder, wife, mother</h2><p>Two years ago, I felt that my life looked pretty much the way I had planned it. I had a family that I adored, my technology startup was gaining traction, and I had a community of friends, colleagues, and funders I respected.</p>
+<div class="story"><span class="who">Susan</span><h2>Founder, wife, mother</h2><p class="mark lead-q">&ldquo;My business went from pre-revenue and fledgling to self-sustaining and thriving, not because I worked harder, but because I worked differently.&rdquo;</p><details><summary>Read Susan&rsquo;s story</summary><div class="full"><p>Two years ago, I felt that my life looked pretty much the way I had planned it. I had a family that I adored, my technology startup was gaining traction, and I had a community of friends, colleagues, and funders I respected.</p>
 <p>Below the surface, however, I was stressed in ways I readily dismissed and even justified. I was in regular conflict with my co-founder, to the point where a funder recommended that I hire an executive coach to &ldquo;survive&rdquo; the relationship.</p>
 <p>I resisted the idea at first.</p>
 <p>As a bootstrapped startup founder, I felt like executive coaching was an unaffordable luxury. More than that, I had grown skeptical of coaches and consultants who parachuted in without truly knowing me, my industry, or the intimate dynamics of my work.</p>
@@ -130,7 +142,7 @@ h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;
 <p>Her guidance has made me a stronger and more effective businessperson, colleague, wife, and mother.</p>
 <p>An unexpected part of our work has been that strengthening my professional relationships has also strengthened my relationships with friends and, especially, my family.</p>
 <p>I have told Dr. Le that my partnership with her is a life-extension technology.</p>
-<p>I am grateful for her every day.</p></div><div class="story"><span class="who">Laurie</span><h2>Marriage, identity, and a different way forward</h2><p>I came to Dr. Le at a moment when I knew something in my life needed to change.</p>
+<p>I am grateful for her every day.</p></div></details></div><div class="story"><span class="who">Laurie</span><h2>Marriage, identity, and a different way forward</h2><p class="mark lead-q">&ldquo;I became a different person, not by reinventing myself, but by coming home to who I actually am.&rdquo;</p><details><summary>Read Laurie&rsquo;s story</summary><div class="full"><p>I came to Dr. Le at a moment when I knew something in my life needed to change.</p>
 <p>I had reached a crossroads and was searching for a different way forward, one that addressed not just a single issue, but the deeper patterns shaping my health, my relationships, and my sense of self.</p>
 <p>I was curious about holistic approaches and open to doing deeper work, but I could not have anticipated how profoundly this mentorship would impact my life.</p>
 <p>From the beginning, working with Dr. Le felt deeply personal. In our sessions, I felt as though I was her only client.</p>
@@ -147,7 +159,7 @@ h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;
 <p>Even so, I would not trade this year for anything.</p>
 <p>The clarity, self-trust, and inner stability I gained have been life changing.</p>
 <p>Dr. Le is so much more than a practitioner. To me, she is a guide, a teacher, and a steady presence through profound transition.</p>
-<p>If I had one wish for the world, it would be that everyone have access to this kind of support.</p></div><div class="story"><span class="who">Bri</span><h2>From fixing to living</h2><p>Something inside me told me I needed to work with Dr. Le.</p>
+<p>If I had one wish for the world, it would be that everyone have access to this kind of support.</p></div></details></div><div class="story"><span class="who">Bri</span><h2>From fixing to living</h2><p class="mark lead-q">&ldquo;There was life before working with Dr. Le and life after working with her.&rdquo;</p><details><summary>Read Bri&rsquo;s story</summary><div class="full"><p>Something inside me told me I needed to work with Dr. Le.</p>
 <p>I could not fully explain why. I just knew.</p>
 <p>I arrived carrying many concerns about my life and a long history of trying to fix what felt broken. I was focused on outcomes, convinced that if I just tried harder or did more, things would finally resolve.</p>
 <p>Dr. Le helped me step back and see the bigger picture.</p>
@@ -169,7 +181,7 @@ h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;
 <p>When I reflect on who I was before working with Dr. Le, I am awed by how much I have grown.</p>
 <p>Dr. Le has an extraordinary ability to cut through noise and distraction to reach the heart of the matter. Time and again, I left our sessions with profound clarity and insight.</p>
 <p>There was life before working with Dr. Le and life after working with her.</p>
-<p>My life now is everything I never dared to believe I could have.</p></div><div class="story"><span class="who">Beth</span><h2>Clarity, embodiment, and creative freedom</h2><p>I was struggling with feeling stuck in my life.</p>
+<p>My life now is everything I never dared to believe I could have.</p></div></details></div><div class="story"><span class="who">Beth</span><h2>Clarity, embodiment, and creative freedom</h2><p class="mark lead-q">&ldquo;Dr. Le helps you become aware of and fall in love with your most authentic self.&rdquo;</p><details><summary>Read Beth&rsquo;s story</summary><div class="full"><p>I was struggling with feeling stuck in my life.</p>
 <p>Even though I had accomplishments and moments of joy, there was a deep frustration and confusion I could not shake. I did not fully recognize it at the time, but I also carried a quiet anger at how limited I felt by old patterns and beliefs.</p>
 <p>Dr. Le saw the opportunities for my growth with such clarity and communicated them with love and insight.</p>
 <p>She helped me completely shift my perspective on life.</p>
@@ -182,7 +194,7 @@ h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;
 <p>I realized that my life had been shaped by ideas, beliefs, and patterns that were not truly my own.</p>
 <p>Through this process, I developed a clearer awareness of who I am, what I desire, and how I want to show up in the world.</p>
 <p>Dr. Le helps you become aware of and fall in love with your most authentic self.</p>
-<p>For me, this work marked the beginning of stepping fully into my own creative power, presence, and capacity.</p></div><div class="story"><span class="who">Kaitlin</span><h2>Fear, trust, and learning to listen</h2><p>Like many people, my life has been driven by fear.</p>
+<p>For me, this work marked the beginning of stepping fully into my own creative power, presence, and capacity.</p></div></details></div><div class="story"><span class="who">Kaitlin</span><h2>Fear, trust, and learning to listen</h2><p class="mark lead-q">&ldquo;The simplest way I can describe Dr. Le&rsquo;s impact on me is that she introduced me to my truest self.&rdquo;</p><details><summary>Read Kaitlin&rsquo;s story</summary><div class="full"><p>Like many people, my life has been driven by fear.</p>
 <p>Fear of failing, disappointing others, not growing enough, growing too much, loss, and, in a strange way, success.</p>
 <p>Fear led the way under the guise of safety and logic.</p>
 <p>I assumed this was simply part of who I was.</p>
@@ -203,7 +215,7 @@ h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;
 <p>I have learned to live inside my body, not only my mind.</p>
 <p>I have learned to take ownership of my life and to trust.</p>
 <p>Beyond any tools or practices, I began trusting myself in ways I could never have imagined.</p>
-<p>What a gift that is for the rest of your life.</p></div>
+<p>What a gift that is for the rest of your life.</p></div></details></div>
 </section>
 
 <section class="close">
